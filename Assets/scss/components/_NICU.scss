@@ -1,0 +1,177 @@
+.tilted-banner {
+  width: 100%;
+  min-height: 700px;
+  z-index: -1;
+  // clip-path: polygon(0 0, 100% 0%, 100% 52%, 0 63%);
+  clip-path: polygon(0 0, 100% 0, 100% 89%, 0% 100%);
+
+
+  position: relative;
+
+  &--pink {
+    background-color: $light-pink;
+  }
+
+  &--black {
+    background-color: black;
+  }
+  &--blue {
+    background-color: $primary-color;
+  }
+  &--grey {
+    background-color: #F5F5F5;
+    min-height: 300px;
+  }
+  &--img {
+    background: url(../../images/tilted.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &--light-blue
+  {
+    background: rgba(0, 119, 205, 0.04);
+    clip-path: polygon(0 21%, 100% 1%, 100% 100%, 0 99%);
+    min-height: 300px;
+    
+  }
+}
+
+.banner-content-container {
+  max-width: 1050px;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  
+}
+.banner-content {
+  max-width: 1530px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__desc {
+    @media (min-width: 1024px) {
+      padding: 50px;
+    }
+    @media (min-width: 768px) and (max-width: 998px) {
+      padding: 10px 50px;
+    }
+
+    &__heading {
+      color: $primary-color;
+      font-family: $openSans;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 45px;
+      letter-spacing: 2%;
+
+      &--white {
+        color: $main-color;
+      }
+    }
+
+    &__para {
+      padding-top: 20px;
+      font-family: $openSans;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: 2%;
+
+      &--white {
+        color: $main-color;
+      }
+    }
+  }
+  &__inquiry-form {
+    top: 230px;
+    padding: 30px 45px;
+    background-color: $white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    right: 85px;
+    position: absolute;
+    max-width: 400px;
+
+    &__heading {
+      color: $primary-color;
+      font-family: $openSans;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: 2%;
+    }
+
+    &__input {
+      padding: 10px 20px;
+      border: 1px solid #bcbcbc;
+      font-family: $openSans;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: 2%;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      margin: 20px 0 5px 0;
+      width: 100%;
+      color: $grey;
+
+      &--dropdown {
+        -webkit-appearance: none;
+        background-image: url(../../images/downarrow.png);
+        background-repeat: no-repeat;
+        background-position: 225px;
+      }
+    }
+    &__contact {
+      padding-top: 20px;
+      font-family: $openSans;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: 2%;
+      text-align: center;
+
+      &--link {
+        color: $primary-color;
+        font-weight: 700;
+        text-decoration: none;
+      }
+    }
+  }
+}
+// .show_error {
+//   color: red;
+//   display: block;
+// }
+
+// .hide_error {
+//   display: none;
+// }
+.sr-only {
+  clip: rect(0 0 0 0);
+
+  clip-path: inset(50%);
+
+  height: 1px;
+
+  overflow: hidden;
+
+  position: absolute;
+
+  white-space: nowrap;
+
+  width: 1px;
+}
+.error
+{
+display: none;
+color: red;
+}
+.error-contain 
+{
+  .error
+  {
+    display: block;
+  }
+}

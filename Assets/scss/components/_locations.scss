@@ -1,0 +1,166 @@
+.office-list {
+  max-width: 1176px;
+
+  margin: auto;
+
+  padding-top: 50px;
+
+  width: 100%;
+
+  .c-location-listing {
+    &__region {
+      display: grid;
+      grid-template-columns: 20% 80%;
+      border-bottom: 1px solid #cfdbde;
+
+      margin-bottom: 50px;
+
+      &-wrapper {
+        display: grid;
+        grid-template-columns: auto auto auto;
+      }
+
+      
+
+      &-name {
+        padding-left: 40px;
+
+        padding-right: 80px;
+
+        font-size: 20px;
+
+        color: $blue-light;
+
+        cursor: pointer;
+      }
+
+      &-office {
+        margin-right: 48px;
+
+        padding: 0 40px 35px 0;
+      }
+
+      &-office-city {
+        color: $blue-light;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+.c-location-listing__dropdown-wrapper {
+  text-align: center;
+  overflow: hidden;
+
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: white;
+
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: $grey;
+
+    border-radius: 10px;
+  }
+}
+.c-location-listing__dropdown-trigger {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 25px;
+  padding: 10px 20px;
+}
+
+.c-location-listing__dropdown-list {
+  overflow: hidden;
+  position: absolute;
+  border: 1px solid $grey;
+  width: 250px;
+  max-height: 211px;
+  overflow-y: auto;
+  border-radius: 10px;
+  z-index: 0;
+  background: white ;
+  visibility: hidden;
+  left: 630px;
+  
+}
+.c-location-listing__dropdown-list-item {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding: 20px;
+  border: none;
+  background-color: white;
+  border-bottom: 1px solid $grey;
+  color: grey;
+  cursor: pointer;
+  margin-bottom: 10px;
+
+  &:hover {
+    background-color: $primary-color;
+    color: white;
+  }
+}
+.c-location-listing__dropdown-list-item-country {
+  padding: 20px;
+  text-align: left;
+}
+.dropdown
+{
+  margin-top: 50px;
+}
+.open {
+  visibility: visible;
+
+  z-index: 2;
+}
+
+.hide-content {
+  display: none !important;
+  visibility: hidden;
+}
+
+.display-selected-content {
+  display: block;
+}
+.c-location-listing__region-office-address {
+  text-decoration: none;
+  color: black;
+}
+.close-button {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+.close-button-dis {
+  display: none;
+}
+.c-location-listing__dropdown
+{
+  display: flex;
+  justify-content: center;
+
+}
+#mygooglemaps
+{
+  width: 100%;
+  height: 600px;
+}
+.info-window
+{
+  width: 250px;
+  text-align: center;
+  
+ 
+}

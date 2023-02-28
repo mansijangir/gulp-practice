@@ -1,0 +1,37 @@
+/*=============  Vendor style   ================================*/
+@import "./vendor/bootstrap";
+@import "./vendor/fontawesome";
+
+
+/*=================  base scss  ================================*/
+@import "./base/var";
+@import "./base/mixin";
+@import "./base/base";
+@import "./base/theme";
+
+
+/*============= Component style ================================*/
+
+@import "./components/banner-image";
+@import "./components/banner-carousel";
+@import "./components/popular-services";
+@import "./components/form-style";
+@import "./components/footer";
+@import "./components/services";
+@import "./components/style1";
+@import "./components/slider-style";
+@import "./components/slider-style";
+@import "./components/stlukes";
+@import "./components/blue-card";
+@import "./components/card-structure";
+@import "./components/vertical-tab";
+@import "./components/NICU.scss";
+@import "./components/vertical-scroll-tab";
+@import "./components/locations";
+@import "./components/doc-info";
+@import "./components/embeded-vid";
+@import "./components/about";
+@import "./components/education";
+@import "./components/color-filter";
+@import "./components/header"
+

@@ -1,0 +1,41 @@
+.doc-info-modal
+{ text-align: center;
+    height: 500px;
+   
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius:20px ;
+    max-width: 500px;
+    margin: auto;
+    // display: none;
+
+    &__img
+    {
+       
+       width: 200px;
+       height: 200px;
+       border-radius: 50%;
+       margin: 50px auto;
+    }
+    &__info
+    {
+        color: black;
+        font-family: $openSans;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 28px;
+        letter-spacing: 2%;
+
+        &--more
+        {
+            font-weight: 500;
+            font-size: 28px;   
+        }
+    }
+    &__bookBtn
+    {
+       
+       margin-top: 30px;
+        border: 2px solid $primary-color;
+
+}
+}

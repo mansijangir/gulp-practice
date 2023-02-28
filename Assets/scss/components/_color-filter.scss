@@ -1,0 +1,145 @@
+.filter-box
+{
+    max-width: 800px;
+    margin: auto;
+}.colors-container
+{
+    
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    
+    
+}
+
+.color-box
+{
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+    border: none;
+
+}
+
+.red
+{
+    background: red;
+
+    &--1
+    {
+        background: rgb(252, 71, 71); 
+           }
+    &--2
+    {
+        background: rgb(245, 104, 104);  
+    }
+    &--3
+    {
+        background: rgb(248, 161, 161); 
+    }
+    &--4
+    {
+        background: rgb(247, 198, 198); 
+    }
+
+}
+
+.green
+{
+    background: green;
+
+    &--1
+    {
+        background: rgb(35, 146, 35); 
+           }
+    &--2
+    {
+        background: rgb(66, 173, 66);  
+    }
+    &--3
+    {
+        background: rgb(161, 219, 161); 
+    }
+    &--4
+    {
+        background: rgb(211, 240, 211); 
+    }
+
+}
+
+.blue
+{
+    background: blue;
+
+    &--1
+    {
+        background: rgb(49, 49, 248); 
+           }
+    &--2
+    {
+        background: rgb(114, 114, 243);  
+    }
+    &--3
+    {
+        background: rgb(143, 143, 243); 
+    }
+    &--4
+    {
+        background: rgb(205, 205, 241); 
+    }
+
+}
+
+.purple
+{
+    background: rgb(165, 42, 134);
+
+    &--1
+    {
+        background: rgb(185, 67, 156);
+           }
+    &--2
+    {
+        background: rgb(223, 115, 196);  
+    }
+    &--3
+    {
+        background: rgb(224, 141, 204);
+    }
+    &--4
+    {
+        background: rgb(236, 199, 227);
+    }
+
+}
+.button-select
+{   width: 150px;
+    padding: 20px 0;
+    margin: 3px;
+    border: none;
+    color: white; 
+    &:hover
+    {
+      opacity: 0.5;
+    }
+
+}
+.buttons-container
+{
+    max-width: 800px;
+    margin: auto;
+}
+
+.all
+{    border: 0.5px solid black;
+    color: black;
+}
+
+
+.color-carousel-container{
+
+    padding: 50px;
+}
+.color-carousel
+{
+    height: 500px;
+}

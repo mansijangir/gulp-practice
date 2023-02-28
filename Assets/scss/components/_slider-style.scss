@@ -1,0 +1,141 @@
+
+
+.slider {
+  width: 100%;
+ 
+
+  &__image-container {
+    position: relative;
+    // max-height: 400px;
+    @media (min-width: 1024px) {
+      // max-height: 500px;
+    }
+    @media (min-width: 768px) and (max-width: 998px) {
+      // max-height: 300px;
+    }
+  }
+  &__image {
+    width: 100%;
+   object-fit: cover;
+    @media (min-width: 1024px) {
+      width: 100%;
+      max-height: 410px;
+    }
+    @media (min-width: 768px) and (max-width: 998px) {
+      width: 100%;
+      
+    }
+  }
+  &__text {
+    padding: 20px 20px 0px 20px;
+   
+
+    @media (min-width: 1024px) {
+      width: 40%;
+      top: 20%;
+      right: 1%;
+      z-index: 1;
+      position: absolute;
+      padding: 0;
+    }
+    @media (min-width: 768px) and (max-width: 998px) {
+      width: 40%;
+      top: 20%;
+      right: 1%;
+      z-index: 1;
+      position: absolute;
+      padding: 0;
+    }
+  }
+  &__text-heading {
+    color: $metallic-seaweed;
+    font-family: $openSans;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 2%;
+    padding-bottom: 20px;
+
+    @media (min-width: 1024px) {
+      font-weight: 400;
+      font-size: 37px;
+      line-height: 47.66px;
+      letter-spacing: 2%;
+      padding-bottom: 20px;
+    }
+    @media (min-width: 768px) and (max-width: 998px) {
+      font-family: $openSans;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 20px;
+      letter-spacing: 2%;
+      padding-bottom: 20px;
+    }
+  }
+  &__text-content {
+    font-family: $openSans;
+    color: $black;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    padding-bottom: 20px;
+
+    @media (min-width: 1024px) {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 28px;
+      padding-bottom: 20px;
+    }
+    @media (min-width: 768px) and (max-width: 998px) {
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 10px;
+      padding-bottom: 20px;
+    }
+  }
+  &__text-btn {
+    border: solid 1px #0d5f95;
+    border-radius: 70px;
+    background-color: transparent;
+    color: $metallic-seaweed;
+    padding: 10px 20px 10px 20px;
+    text-transform: uppercase;
+    font-family: $openSans;
+    font-weight: 700;
+
+    font-size: 16px;
+    cursor: pointer;
+
+    @media (min-width: 1024px) {
+      padding: 10px 20px 10px 20px;
+    }
+    @media (min-width: 768px) and (max-width: 998px) {
+      padding: 5px 10px 5px 10px;
+
+      font-size: 10px;
+    }
+
+    &:hover {
+      background-color: $metallic-seaweed;
+      color: $white;
+    }
+  }
+}
+.carousel-banner {
+  position: relative;
+  width: 100%;
+  .carousel-indicators {
+    position: static;
+    z-index: 10;
+    .active {
+      background-color: #f05b14;
+    }
+  }
+
+  &__indicators [data-bs-target] {
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background-color: #dcdada;
+  }
+}

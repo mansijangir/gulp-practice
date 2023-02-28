@@ -1,0 +1,24 @@
+
+.vid-container
+{   max-width: 1250px;
+    display: flex;
+    grid-template-columns: 40% 60%;
+}
+.video
+{
+  position: absolute;
+  left: 50px;
+}
+// .vid-content
+// {
+    
+// }
+.vid-content-container
+{
+    max-width: 800px;
+    position: absolute;
+    right: 0;
+    // top: 100px;
+    padding-top: 100px;
+   
+}

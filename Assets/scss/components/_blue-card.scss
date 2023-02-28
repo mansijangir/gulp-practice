@@ -1,0 +1,106 @@
+.btn {
+  border-radius: 70px;
+  padding: 14px 25px 14px 25px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: $openSans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  cursor: pointer;
+
+  &--blue {
+    border: solid 1px $main-color;
+    background-color: $primary-color;
+    color: $main-color;
+    &:hover {
+      background-color: $main-color;
+      color: $primary-color;
+    }
+  }
+
+  &--blue-border
+  {
+    border: solid 1px $primary-color;
+    background-color: transparent;
+  }
+}
+
+.blue-card-container {
+  width: 100%;
+ margin-top: 20px;
+  overflow: hidden;
+  
+}
+
+.blue-card {
+  display: flex;
+  width: 100%;
+
+  flex-direction: column-reverse;
+
+  overflow: hidden;
+  @media (min-width: 1024px) {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1320px;
+    flex-direction: row;
+    border-radius: 50px 0 50px 0;
+  }
+  @media (min-width: 768px) and (max-width: 998px) {
+    flex-direction: row;
+    margin: 10px auto;
+    border-radius: 50px 0 50px 0;
+  }
+
+  &__desc {
+    padding: 20px;
+    background-color: $primary-color;
+
+    @media (min-width: 1024px) {
+      padding: 80px;
+      width: 50%;
+    }
+    @media (min-width: 768px) and (max-width: 998px) {
+      padding: 30px;
+      width: 50%;
+    }
+
+    &__heading {
+      color: $main-color;
+      font-family: $openSans;
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 35px;
+      letter-spacing: 2%;
+      @media (min-width: 1024px) {
+        font-size: 35px;
+        line-height: 47.66px;
+      }
+      @media (min-width: 768px) and (max-width: 998px) {
+      }
+    }
+    &__content {
+      color: $main-color;
+      font-family: $openSans;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: 2%;
+
+      &--bold {
+        font-weight: 700;
+      }
+    }
+  }
+  &__img {
+    width: 100%;
+    @media (min-width: 1024px) {
+      width: 50%;
+    }
+    @media (min-width: 768px) and (max-width: 998px) {
+      width: 50%;
+    }
+  }
+}

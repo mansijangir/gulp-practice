@@ -1,0 +1,43 @@
+<section>
+  <div class="banner-content__inquiry-form">
+    <h3 class="banner-content__inquiry-form__heading">Find a Doctor</h3>
+    <form id="find-doc">
+<div class="select-option">
+  <label class="sr-only" for="specialization">Select specialization</label> 
+  <select
+      id="specialization"
+      class="banner-content__inquiry-form__input banner-content__inquiry-form__input--dropdown"
+    >
+      <option value="">Select specialization</option>
+      <option id="pediatrics" value="Pediatrics">Pediatrics</option>
+
+      <option id="neurology" value="Neurology">Neurology</option>
+
+      <option id="dermatology" value="dermatology">Dermatology</option>
+
+      <option id="radiology" value="Radiology">Radiology</option>
+    </select>
+    
+    <small class="error" id="specializationError">! please select one option</small>
+</div>
+<div class="select-zipcode">
+  <label class="sr-only" for="zipcode">zipcode</label> 
+    <input
+      type="text"
+      class="banner-content__inquiry-form__input"
+      placeholder="Zip Code"
+      id="zipcode"
+    />
+    <small class="error" id="zipcodeError">! please enter a zip code</small><br />
+</div>
+    <button id="submit" class="btn btn--blue">Find a Doctor Near Me</button>
+    </form>
+    <p class="banner-content__inquiry-form__contact">
+      or call us at
+      <a
+        class="banner-content__inquiry-form__contact banner-content__inquiry-form__contact--link"
+        >866-STLUKES</a
+      >
+    </p>
+  </div>
+</section>
